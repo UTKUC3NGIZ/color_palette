@@ -4,17 +4,25 @@ import "./style.css";
 function Create() {
   return (
     <>
-      <div>
+      <div className="createProject">
         <label htmlFor="">Yeni Proje Oluştur</label>
         <input type="text" />
       </div>
-      <div>
+      <div className="lastProject">
         <h2>Projelerim</h2>
         <div>
-          <span>Proje 1</span>
-          <span>Proje 2</span>
-          <span>Proje 3</span>
-          <span>Proje 4</span>
+          <div>
+            <h3>Calculator App</h3>
+            <div>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div>
+            <h3>Calculator App</h3>
+          </div>
         </div>
       </div>
     </>

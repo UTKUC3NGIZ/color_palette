@@ -27,7 +27,6 @@ function Colors() {
                 </span>
                 <div>
                   <span>
-                    {" "}
                     <TiTimes />
                   </span>
                   <h3>{color.color}</h3>
