@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { TiTimes, TiPlus } from "react-icons/ti";
+
 import "./style.css";
 function Colors() {
   const [palette, setPalette] = useState([
@@ -8,21 +10,31 @@ function Colors() {
     {
       color: "9A879D",
     },
+    {
+      color: "121212",
+    },
   ]);
   return (
     <>
       <div className="colors">
-        <h2>Deneme Projesi</h2>
+        <h2>Calculator App</h2>
         <section>
           {palette.map((color, index) => (
             <div style={{ backgroundColor: `#${color.color}` }} key={index}>
               <span>
-                <span>+</span>
+                <span>
+                  <TiPlus />
+                </span>
                 <div>
-                  <span>x</span>
+                  <span>
+                    {" "}
+                    <TiTimes />
+                  </span>
                   <h3>{color.color}</h3>
                 </div>
-                <span>+</span>
+                <span>
+                  <TiPlus />
+                </span>
               </span>
             </div>
           ))}
