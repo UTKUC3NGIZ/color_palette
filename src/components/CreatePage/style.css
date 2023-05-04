@@ -3,20 +3,22 @@
   flex-direction: column;
   text-align: center;
   align-items: center; }
-  .createProject label {
-    color: #feffff;
-    font-size: 3rem;
-    padding-bottom: 2rem; }
-  .createProject input {
-    padding: 1rem;
-    width: 75%;
-    font-size: 1.5rem;
-    background-color: #0a0a20;
-    color: white;
-    border: 2px solid white;
-    border-radius: 0.5rem; }
-    .createProject input:focus {
-      outline: none; }
+  .createProject form {
+    width: 100%; }
+    .createProject form label {
+      color: #feffff;
+      font-size: 3rem;
+      padding-bottom: 2rem; }
+    .createProject form input {
+      padding: 1rem;
+      width: 75%;
+      font-size: 1.5rem;
+      background-color: #0a0a20;
+      color: white;
+      border: 2px solid white;
+      border-radius: 0.5rem; }
+      .createProject form input:focus {
+        outline: none; }
 
 .lastProject h2 {
   color: #feffff;
@@ -31,16 +33,15 @@
     width: 48%;
     height: 100px;
     color: #feffff;
-    border: 1px solid white; }
+    margin: 1rem 0; }
     .lastProject > div > div h3 {
       margin: 0;
-      margin-bottom: .5rem; }
+      margin-bottom: 0.5rem; }
     .lastProject > div > div div {
       display: flex;
       height: 100%; }
       .lastProject > div > div div span {
         flex: 1;
-        height: auto;
-        background-color: red; }
+        height: auto; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,49 +1,43 @@
 import React, { useState } from "react";
 import "./style.css";
 
-function Create() {
-  const [projects, setProjects] = useState([
-    {
-      id: 0,
-      name: "calculator App",
-      colors: ["000", "fff", "ccc"],
-    },
-    {
-      id: 1,
-      name: "calculator App",
-      colors: ["000", "fff", "ccc"],
-    },
-    {
-      id: 2,
-      name: "calculator App",
-      colors: ["000", "fff", "ccc"],
-    },
-  ]);
+function Create(props) {
+  const [addProject, setAddProject] = useState("");
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    const idGenerator = props.projects.length;
+    props.setProjects([
+      ...props.projects,
+      { id: idGenerator, name: addProject, colors: ["000", "fff"] },
+    ]);
+    setAddProject("");
+  }
 
   return (
     <>
       <div className="createProject">
-        <label htmlFor="">Yeni Proje Oluştur</label>
-        <input type="text" />
+        <form onSubmit={handleSubmit}>
+          <label htmlFor="addProject">Yeni Proje Oluştur</label>
+          <input
+            type="text"
+            value={addProject}
+            onChange={(e) => setAddProject(e.target.value)}
+            id="addProject"
+          />
+        </form>
       </div>
       <div className="lastProject">
         <h2>Projelerim</h2>
         <div>
-          {/* <div>
-            <h3>Calculator App</h3>
-            <div>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div> */}
-          {projects.map((project) => (
+          {props.projects.map((project) => (
             <div key={project.id}>
               <h3>{project.name}</h3>
               <div>
                 {project.colors.map((color, index) => (
-                  <span key={index} style={{ backgroundColor: `#${color}` }} >{color}</span>
+                  <span key={index} style={{ backgroundColor: `#${color}` }}>
+                    {color}
+                  </span>
                 ))}
               </div>
             </div>

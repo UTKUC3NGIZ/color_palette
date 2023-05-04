@@ -3,21 +3,24 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
-  label {
-    color: #feffff;
-    font-size: 3rem;
-    padding-bottom: 2rem;
-  }
-  input {
-    padding: 1rem;
-    width: 75%;
-    font-size: 1.5rem;
-    background-color: #0a0a20;
-    color: white;
-    border: 2px solid white;
-    border-radius: 0.5rem;
-    &:focus {
-      outline: none;
+  form {
+    width: 100%;
+    label {
+      color: #feffff;
+      font-size: 3rem;
+      padding-bottom: 2rem;
+    }
+    input {
+      padding: 1rem;
+      width: 75%;
+      font-size: 1.5rem;
+      background-color: #0a0a20;
+      color: white;
+      border: 2px solid white;
+      border-radius: 0.5rem;
+      &:focus {
+        outline: none;
+      }
     }
   }
 }
@@ -37,10 +40,10 @@
       width: 48%;
       height: 100px;
       color: #feffff;
-      border: 1px solid white;
+      margin: 1rem 0;
       h3 {
         margin: 0;
-        margin-bottom: .5rem;
+        margin-bottom: 0.5rem;
       }
       div {
         display: flex;
@@ -48,7 +51,6 @@
         span {
           flex: 1;
           height: auto;
-          background-color: red;
         }
       }
     }
