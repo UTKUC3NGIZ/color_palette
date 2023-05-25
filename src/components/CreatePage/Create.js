@@ -15,26 +15,36 @@ function Create(props) {
 
   return (
     <>
-      <div className="createProject">
-        <form onSubmit={handleSubmit}>
-          <label htmlFor="addProject">Yeni Proje Oluştur</label>
+      <div className="">
+        <form
+          onSubmit={handleSubmit}
+          className="flex flex-col items-center	 text-2xl m-4"
+        >
+          <label htmlFor="addProject" className="text-4xl">
+            Yeni Proje Oluştur
+          </label>
           <input
             type="text"
             value={addProject}
             onChange={(e) => setAddProject(e.target.value)}
             id="addProject"
+            className="mx-10 w-full p-2 mx-4 my-8 focus:outline-none text-black"
           />
         </form>
       </div>
-      <div className="lastProject">
-        <h2>Projelerim</h2>
+      <div className="m-4">
+        <h2 className="text-3xl mb-2">Projelerim</h2>
         <div>
           {props.projects.map((project) => (
-            <div key={project.id}>
-              <h3>{project.name}</h3>
-              <div>
+            <div key={project.id} className="my-4">
+              <h3 className="text-xl pb-4">{project.name}</h3>
+              <div className=" flex w-full">
                 {project.colors.map((color, index) => (
-                  <span key={index} style={{ backgroundColor: `#${color}` }}>
+                  <span
+                    className="flex justify-center items-center w-full h-32"
+                    key={index}
+                    style={{ backgroundColor: `#${color}` }}
+                  >
                     {color}
                   </span>
                 ))}
