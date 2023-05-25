@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { TiTimes, TiPlus } from "react-icons/ti";
 
-import "./style.css";
 function Colors() {
   const [palette, setPalette] = useState([
     {
