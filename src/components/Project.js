@@ -1,32 +1,72 @@
 import React from "react";
-import { AiOutlinePlus } from "react-icons/ai";
+import { AiOutlinePlus, AiOutlineDelete, AiOutlineEdit } from "react-icons/ai";
 
 function Project() {
   return (
     <div>
       <div className="pt-8 mt-8  border-t-2 border-gray-800 ">
-        <h1 className="text-white text-2xl ml-2 sm:text-3xl md:text-4xl">Proje 1</h1>
+        <h1 className="text-white text-2xl ml-2 sm:text-3xl md:text-4xl">
+          Proje 1
+        </h1>
       </div>
       <div>
         <div className="grid grid-cols-3 justify-items-center mt-8">
-          <span className="rounded-full border w-3/4 aspect-square mb-5 text-black flex items-center justify-center bg-white sm:text-xl md:text-2xl">
+          <div className="rounded-full border w-3/4 aspect-square mb-5 text-black flex items-center justify-center bg-white sm:text-xl md:text-2xl relative group">
             #000000
-          </span>
-          <span className="rounded-full border w-3/4 aspect-square mb-5 text-black flex items-center justify-center bg-white sm:text-xl md:text-2xl ">
+            <div className="absolute top-0  flex-col text-center hidden group-hover:flex">
+              <span className="mt-1 text-base sm:text-2xl ">
+                <AiOutlineEdit />
+              </span>
+            </div>
+            <div className="absolute bottom-0  flex-col text-center hidden group-hover:flex">
+              <span className="mb-1 text-base sm:text-2xl">
+                <AiOutlineDelete />
+              </span>
+            </div>
+          </div>
+          <div className="rounded-full border w-3/4 aspect-square mb-5 text-black flex items-center justify-center bg-white sm:text-xl md:text-2xl relative group">
             #000000
-          </span>
-          <span className="rounded-full border w-3/4 aspect-square mb-5 text-black flex items-center justify-center bg-white sm:text-xl md:text-2xl ">
+            <div className="absolute top-0  flex-col text-center hidden group-hover:flex">
+              <span className="mt-1 text-base sm:text-2xl ">
+                <AiOutlineEdit />
+              </span>
+            </div>
+            <div className="absolute bottom-0  flex-col text-center hidden group-hover:flex">
+              <span className="mb-1 text-base sm:text-2xl">
+                <AiOutlineDelete />
+              </span>
+            </div>
+          </div>
+          <div className="rounded-full border w-3/4 aspect-square mb-5 text-black flex items-center justify-center bg-white sm:text-xl md:text-2xl relative group">
             #000000
-          </span>
-          <span className="rounded-full border w-3/4 aspect-square mb-5 text-black flex items-center justify-center bg-white sm:text-xl md:text-2xl ">
+            <div className="absolute top-0  flex-col text-center hidden group-hover:flex">
+              <span className="mt-1 text-base sm:text-2xl ">
+                <AiOutlineEdit />
+              </span>
+            </div>
+            <div className="absolute bottom-0  flex-col text-center hidden group-hover:flex">
+              <span className="mb-1 text-base sm:text-2xl">
+                <AiOutlineDelete />
+              </span>
+            </div>
+          </div>
+          <div className="rounded-full border w-3/4 aspect-square mb-5 text-black flex items-center justify-center bg-white sm:text-xl md:text-2xl relative group">
             #000000
-          </span>
-          <span className="rounded-full border w-3/4 aspect-square mb-5 text-black flex items-center justify-center bg-white sm:text-xl md:text-2xl ">
-            #000000
-          </span>
-          <span className="rounded-full border w-3/4 aspect-square mb-5 text-white flex items-center justify-center text-3xl border-gray-800 ">
+            <div className="absolute top-0  flex-col text-center hidden group-hover:flex">
+              <span className="mt-1 text-base sm:text-2xl ">
+                <AiOutlineEdit />
+              </span>
+            </div>
+            <div className="absolute bottom-0  flex-col text-center hidden group-hover:flex">
+              <span className="mb-1 text-base sm:text-2xl">
+                <AiOutlineDelete />
+              </span>
+            </div>
+          </div>
+
+          <div className="rounded-full border w-3/4 aspect-square mb-5 text-white flex items-center justify-center text-3xl border-gray-800 ">
             <AiOutlinePlus />
-          </span>
+          </div>
         </div>
       </div>
     </div>
