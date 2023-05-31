@@ -10,8 +10,8 @@ function Project() {
         </h1>
       </div>
       <div>
-        <div className="grid grid-cols-3 justify-items-center mt-8">
-          <div className="rounded-full border w-3/4 aspect-square mb-5 text-black flex items-center justify-center bg-white sm:text-xl md:text-2xl relative group">
+        <div className="grid grid-cols-3 justify-items-center mt-8 lg:grid-cols-5 ">
+          <div className="rounded-full border w-3/4 aspect-square mb-5 text-black flex items-center justify-center bg-white sm:text-xl md:text-2xl relative group lg:w-2/4">
             #000000
             <div className="absolute top-0  flex-col text-center hidden group-hover:flex">
               <span className="mt-1 text-base sm:text-2xl ">
@@ -24,7 +24,8 @@ function Project() {
               </span>
             </div>
           </div>
-          <div className="rounded-full border w-3/4 aspect-square mb-5 text-black flex items-center justify-center bg-white sm:text-xl md:text-2xl relative group">
+          <span className=" aspect-square hidden lg:block  lg:w-2/4"></span>
+          <div className="rounded-full border w-3/4 aspect-square mb-5 text-black flex items-center justify-center bg-white sm:text-xl md:text-2xl relative group lg:w-2/4">
             #000000
             <div className="absolute top-0  flex-col text-center hidden group-hover:flex">
               <span className="mt-1 text-base sm:text-2xl ">
@@ -37,7 +38,8 @@ function Project() {
               </span>
             </div>
           </div>
-          <div className="rounded-full border w-3/4 aspect-square mb-5 text-black flex items-center justify-center bg-white sm:text-xl md:text-2xl relative group">
+          <span className=" aspect-square hidden lg:block  lg:w-2/4"></span>
+          <div className="rounded-full border w-3/4 aspect-square mb-5 text-black flex items-center justify-center bg-white sm:text-xl md:text-2xl relative group lg:w-2/4">
             #000000
             <div className="absolute top-0  flex-col text-center hidden group-hover:flex">
               <span className="mt-1 text-base sm:text-2xl ">
@@ -50,7 +52,8 @@ function Project() {
               </span>
             </div>
           </div>
-          <div className="rounded-full border w-3/4 aspect-square mb-5 text-black flex items-center justify-center bg-white sm:text-xl md:text-2xl relative group">
+          <span className=" aspect-square hidden lg:block  lg:w-2/4"></span>
+          <div className="rounded-full border w-3/4 aspect-square mb-5 text-black flex items-center justify-center bg-white sm:text-xl md:text-2xl relative group lg:w-2/4">
             #000000
             <div className="absolute top-0  flex-col text-center hidden group-hover:flex">
               <span className="mt-1 text-base sm:text-2xl ">
@@ -63,8 +66,51 @@ function Project() {
               </span>
             </div>
           </div>
+          <span className=" aspect-square hidden lg:block  lg:w-2/4"></span>
+          <div className="rounded-full border w-3/4 aspect-square mb-5 text-black flex items-center justify-center bg-white sm:text-xl md:text-2xl relative group lg:w-2/4">
+            #000000
+            <div className="absolute top-0  flex-col text-center hidden group-hover:flex">
+              <span className="mt-1 text-base sm:text-2xl ">
+                <AiOutlineEdit />
+              </span>
+            </div>
+            <div className="absolute bottom-0  flex-col text-center hidden group-hover:flex">
+              <span className="mb-1 text-base sm:text-2xl">
+                <AiOutlineDelete />
+              </span>
+            </div>
+          </div>
+          <span className=" aspect-square hidden lg:block  lg:w-2/4"></span>
+          <div className="rounded-full border w-3/4 aspect-square mb-5 text-black flex items-center justify-center bg-white sm:text-xl md:text-2xl relative group lg:w-2/4">
+            #000000
+            <div className="absolute top-0  flex-col text-center hidden group-hover:flex">
+              <span className="mt-1 text-base sm:text-2xl ">
+                <AiOutlineEdit />
+              </span>
+            </div>
+            <div className="absolute bottom-0  flex-col text-center hidden group-hover:flex">
+              <span className="mb-1 text-base sm:text-2xl">
+                <AiOutlineDelete />
+              </span>
+            </div>
+          </div>
+          <span className=" aspect-square hidden lg:block  lg:w-2/4"></span>
+          <div className="rounded-full border w-3/4 aspect-square mb-5 text-black flex items-center justify-center bg-white sm:text-xl md:text-2xl relative group lg:w-2/4">
+            #000000
+            <div className="absolute top-0  flex-col text-center hidden group-hover:flex">
+              <span className="mt-1 text-base sm:text-2xl ">
+                <AiOutlineEdit />
+              </span>
+            </div>
+            <div className="absolute bottom-0  flex-col text-center hidden group-hover:flex">
+              <span className="mb-1 text-base sm:text-2xl">
+                <AiOutlineDelete />
+              </span>
+            </div>
+          </div>
+          <span className=" aspect-square hidden lg:block  lg:w-2/4"></span>
 
-          <div className="rounded-full border w-3/4 aspect-square mb-5 text-white flex items-center justify-center text-3xl border-gray-800 ">
+          <div className="rounded-full border w-3/4 aspect-square mb-5 text-white flex items-center justify-center text-3xl border-gray-800 lg:w-2/4">
             <AiOutlinePlus />
           </div>
         </div>
